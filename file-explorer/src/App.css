@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #313244;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.App h1 {
+  font-size: 18px;
+  color: #cba6f7;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #45475a;
+  letter-spacing: 0.5px;
+}
+
+/* Folder styles */
+.Folder {
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #89b4fa;
+  transition: background 0.15s ease;
+  user-select: none;
+}
+
+.Folder:hover {
+  background-color: #45475a;
+}
+
+/* File styles */
+.file {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #cdd6f4;
+  cursor: default;
+  transition: background 0.15s ease;
+}
+
+.file:hover {
+  background-color: #45475a;
+}
+
+/* Nested items indentation */
+.children {
+  padding-left: 16px;
+  border-left: 1px solid #45475a;
+  margin-left: 12px;
+  margin-top: 2px;
+}
